@@ -21,7 +21,10 @@ namespace SingletonWithEagerLoadingAndLazyLoading
 
         //public static SingletonWithLazyLoading GetInstance
         //{
-        //    return Instance.Value;
+        //    get
+        //    {
+        //        return Instance.Value;
+        //    }
         //}
 
         public static SingletonWithLazyLoading GetInstance()

@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonWithEagerLoadingAndLazyLoading", "SingletonWithEagerLoadingAndLazyLoading\SingletonWithEagerLoadingAndLazyLoading.csproj", "{5093742F-90F1-4A99-95DC-F02B0E757C76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static vs Singleton", "Static vs Singleton\Static vs Singleton.csproj", "{74011AF5-3392-4B82-BB42-984F520D3C9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerUsingSingleton", "LoggerUsingSingleton\LoggerUsingSingleton.csproj", "{D49F9B8A-90DC-4604-B0BF-913EC24A79DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,14 @@ Global
 		{5093742F-90F1-4A99-95DC-F02B0E757C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5093742F-90F1-4A99-95DC-F02B0E757C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5093742F-90F1-4A99-95DC-F02B0E757C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74011AF5-3392-4B82-BB42-984F520D3C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74011AF5-3392-4B82-BB42-984F520D3C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74011AF5-3392-4B82-BB42-984F520D3C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74011AF5-3392-4B82-BB42-984F520D3C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D49F9B8A-90DC-4604-B0BF-913EC24A79DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D49F9B8A-90DC-4604-B0BF-913EC24A79DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D49F9B8A-90DC-4604-B0BF-913EC24A79DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D49F9B8A-90DC-4604-B0BF-913EC24A79DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +63,8 @@ Global
 		{D6B23AC2-DD8F-42BF-B731-FB3817E201EF} = {FB2C6DBC-C36E-4C78-B406-3C2BCAB6920F}
 		{73528E45-1BC5-4A27-800B-1FF3E3A10237} = {FB2C6DBC-C36E-4C78-B406-3C2BCAB6920F}
 		{5093742F-90F1-4A99-95DC-F02B0E757C76} = {FB2C6DBC-C36E-4C78-B406-3C2BCAB6920F}
+		{74011AF5-3392-4B82-BB42-984F520D3C9C} = {FB2C6DBC-C36E-4C78-B406-3C2BCAB6920F}
+		{D49F9B8A-90DC-4604-B0BF-913EC24A79DD} = {FB2C6DBC-C36E-4C78-B406-3C2BCAB6920F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60019288-20D0-4CC3-99FB-F121DDBA13CE}
