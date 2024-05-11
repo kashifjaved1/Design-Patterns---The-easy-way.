@@ -16,13 +16,13 @@ namespace ThingsWithSingleton
     public class Singleton
     {
         private static int counter = 0;
-        private static Singleton Instance;
+        private static Singleton Instance = null;
 
         //public static Singleton GetInstance
         //{
         //    get
         //    {
-        //        if (Instance == null)
+        //        if (Instance is null)
         //            Instance = new Singleton();
 
         //        return Instance;
@@ -31,7 +31,7 @@ namespace ThingsWithSingleton
 
         public static Singleton GetInstance()
         {
-            if (Instance == null)
+            if (Instance is null)
             {
                 Instance = new Singleton();
             }

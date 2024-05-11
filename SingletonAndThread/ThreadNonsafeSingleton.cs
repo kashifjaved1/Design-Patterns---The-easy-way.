@@ -5,35 +5,35 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThingsWithSingleton
+namespace SingletonAndThread
 {
-    public sealed class Singleton
+    public sealed class ThreadNonsafeSingleton
     {
         private static int counter = 0;
-        private static Singleton Instance = null;
+        private static ThreadNonsafeSingleton Instance = null;
 
-        //public static Singleton GetInstance
+        //public static ThreadNonsafeSingleton GetInstance
         //{
         //    get
         //    {
         //        if (Instance is null)
-        //            Instance = new Singleton();
+        //            Instance = new ThreadNonsafeSingleton();
 
         //        return Instance;
         //    }
         //}
 
-        public static Singleton GetInstance()
+        public static ThreadNonsafeSingleton GetInstance()
         {
             if (Instance is null)
             {
-                Instance = new Singleton();
+                Instance = new ThreadNonsafeSingleton();
             }
 
             return Instance;
         }
 
-        private Singleton()
+        private ThreadNonsafeSingleton()
         {
             counter++;
             Console.WriteLine($"Counter: {counter}");
