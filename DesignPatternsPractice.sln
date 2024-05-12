@@ -9,17 +9,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThingsWithSingleton", "Thin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhySingletonIsSealed", "WhySingletonIsSealed\WhySingletonIsSealed.csproj", "{D6B23AC2-DD8F-42BF-B731-FB3817E201EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonAndThread", "SingletonAndThread\SingletonAndThread.csproj", "{73528E45-1BC5-4A27-800B-1FF3E3A10237}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonAndThread", "SingletonAndThread\SingletonAndThread.csproj", "{73528E45-1BC5-4A27-800B-1FF3E3A10237}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{FB2C6DBC-C36E-4C78-B406-3C2BCAB6920F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonWithEagerLoadingAndLazyLoading", "SingletonWithEagerLoadingAndLazyLoading\SingletonWithEagerLoadingAndLazyLoading.csproj", "{5093742F-90F1-4A99-95DC-F02B0E757C76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonWithEagerLoadingAndLazyLoading", "SingletonWithEagerLoadingAndLazyLoading\SingletonWithEagerLoadingAndLazyLoading.csproj", "{5093742F-90F1-4A99-95DC-F02B0E757C76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static vs Singleton", "Static vs Singleton\Static vs Singleton.csproj", "{74011AF5-3392-4B82-BB42-984F520D3C9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Static vs Singleton", "Static vs Singleton\Static vs Singleton.csproj", "{74011AF5-3392-4B82-BB42-984F520D3C9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerUsingSingleton", "LoggerUsingSingleton\LoggerUsingSingleton.csproj", "{D49F9B8A-90DC-4604-B0BF-913EC24A79DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerUsingSingleton", "LoggerUsingSingleton\LoggerUsingSingleton.csproj", "{D49F9B8A-90DC-4604-B0BF-913EC24A79DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Factory\Factory.csproj", "{A64363F5-83BE-4A0E-AC79-7E2638C3E889}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factory", "Factory\Factory.csproj", "{A64363F5-83BE-4A0E-AC79-7E2638C3E889}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapter", "Adapter", "{994BAC0A-85DC-4928-8124-A61959F1AE5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeExternalOrNugetLibrary", "SomeExternalOrNugetLibrary\SomeExternalOrNugetLibrary.csproj", "{683DA02A-C861-44BF-98AE-7ACF1D4BDFE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibConsumerWithAdapterDesignPattern", "LibConsumerWithAdapterDesignPattern\LibConsumerWithAdapterDesignPattern.csproj", "{C0D55713-8732-4BF7-A5F8-DF64E391953F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +65,14 @@ Global
 		{A64363F5-83BE-4A0E-AC79-7E2638C3E889}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A64363F5-83BE-4A0E-AC79-7E2638C3E889}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A64363F5-83BE-4A0E-AC79-7E2638C3E889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{683DA02A-C861-44BF-98AE-7ACF1D4BDFE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683DA02A-C861-44BF-98AE-7ACF1D4BDFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683DA02A-C861-44BF-98AE-7ACF1D4BDFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683DA02A-C861-44BF-98AE-7ACF1D4BDFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0D55713-8732-4BF7-A5F8-DF64E391953F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0D55713-8732-4BF7-A5F8-DF64E391953F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0D55713-8732-4BF7-A5F8-DF64E391953F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0D55713-8732-4BF7-A5F8-DF64E391953F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +85,8 @@ Global
 		{5093742F-90F1-4A99-95DC-F02B0E757C76} = {FB2C6DBC-C36E-4C78-B406-3C2BCAB6920F}
 		{74011AF5-3392-4B82-BB42-984F520D3C9C} = {FB2C6DBC-C36E-4C78-B406-3C2BCAB6920F}
 		{D49F9B8A-90DC-4604-B0BF-913EC24A79DD} = {FB2C6DBC-C36E-4C78-B406-3C2BCAB6920F}
+		{683DA02A-C861-44BF-98AE-7ACF1D4BDFE9} = {994BAC0A-85DC-4928-8124-A61959F1AE5A}
+		{C0D55713-8732-4BF7-A5F8-DF64E391953F} = {994BAC0A-85DC-4928-8124-A61959F1AE5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60019288-20D0-4CC3-99FB-F121DDBA13CE}
