@@ -6,7 +6,7 @@ namespace Factory.Factory.Implementation
 {
     public class IcecreamFactory : IIcecreamFactory
     {
-        public IIcecream GetIcecream(string flavour)
+        public IIcecream GetIcecream(string flavour) // Here IIcecream Interface (parent) that let its subclasses (child) to decide which class to instantiate.
         {
 			try
 			{
